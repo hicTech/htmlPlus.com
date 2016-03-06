@@ -1,0 +1,144 @@
+<style rel="stylesheet/less">
+
+
+    footer{
+       height: 500px;
+       padding-top: 60px;
+       position: relative;
+       color: #fff;
+       text-align: center;
+
+   }
+
+
+   .footer-chevron-container{
+       position: absolute;
+       top: 10px;
+       width: 100%;
+       text-align: center;
+       font-size: 1.5em;
+       z-index: 99;
+
+   }
+
+   .footer-chevron-container .Icon{
+       opacity:0;
+       font-size: 4em;
+   }
+
+   .hictech_infos{
+       opacity: 0;
+       margin-top: 40px;
+       font-size:10px;
+   }
+
+   .socials_row{
+       opacity: 0;
+   }
+
+   .footer_padder{
+       height: 150px;
+   }
+
+
+   .bounce-up {
+       animation: bounce-up 2s infinite;
+       -webkit-animation: bounce-up 2s infinite;
+       -moz-animation: bounce-up 2s infinite;
+       -o-animation: bounce-up 2s infinite;
+   }
+
+   @-webkit-keyframes bounce-up {
+       0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+       40% {-webkit-transform: translateY(30px);}
+       60% {-webkit-transform: translateY(15px);}
+   }
+
+   @-moz-keyframes bounce-up {
+       0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+       40% {-moz-transform: translateY(30px);}
+       60% {-moz-transform: translateY(15px);}
+   }
+
+   @-o-keyframes bounce-up {
+       0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+       40% {-o-transform: translateY(30px);}
+       60% {-o-transform: translateY(15px);}
+   }
+   @keyframes bounce-up {
+       0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+       40% {transform: translateY(30px);}
+       60% {transform: translateY(15px);}
+   }
+
+
+
+</style>
+
+
+
+<textarea data-role="template">
+    <footer>
+        <div class="footer-chevron-container">
+            <i class="Icon fa-chevron-up"></i>
+        </div>
+
+        <div class="EXTENDER">
+            <div data-h-modules-role="dyn_module" data-h-template-name="sky" data-h-module-id="sky"></div>
+        </div>
+    </footer>
+</textarea>
+
+
+
+        
+
+<script>
+
+    moduleFunctions = {
+        js_on:function(opts){
+            var that = this;
+            that.refreshSize();
+
+
+
+
+            scrollWatcher([
+
+                {
+                    query: ".footer-chevron-container .Icon",
+                    active_scroll: {
+                        from: "document_height - (window_height * 2)",
+                        to: "end"
+                    },
+                    css_properties: [
+                        {
+                            from: "font-size: 4em",
+                            to: "font-size: 1.2em"
+                        },
+                        {
+                            from: "opacity: 0",
+                            to: "opacity: 1"
+                        }
+                    ]
+                },
+                {
+                    query: ".footer-chevron-container .Icon",
+                    active_scroll: {
+                        from: "end-80",
+                        to: "end"
+                    },
+                    css_className_add: "bounce-up"
+                },
+
+            ]);
+
+        },
+        refreshSize:function(opts){
+            var that = this;
+            var $that = that.$();
+            $that.find("footer").css("height",window_height);
+        }
+    };
+
+</script>

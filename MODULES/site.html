@@ -1,0 +1,97 @@
+<style rel="stylesheet/less">
+
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Lato', sans-serif;
+        font-size: 1em;
+        line-height: 1.5;
+        color: #606c71;
+    }
+
+    .paragraphs_container{
+        width: 100%;
+    }
+
+    .paragraphs_container.grey {
+        background-color: rgba(0,0,0,0.04);
+    }
+
+    .paragraph {
+        width: 80%;
+        max-width: 1000px;
+        margin: 50px auto 100px;
+        padding: 50px 0px;
+    }
+
+
+
+    a {
+
+        color: #379374;
+        font-weight: bold;
+    }
+
+
+</style>
+
+
+<textarea data-role="template">
+
+
+    <div style="height: 5000px; width: 50%"></div>
+    <!--
+    <div data-h-modules-role="dyn_module" data-h-template-name="mainSection" data-h-module-id="mainSection"></div>
+
+    -->
+
+
+
+    <div data-h-modules-role="dyn_module" data-h-template-name="page_loading" data-h-module-id="page_loading"></div>
+    <div data-h-modules-role="dyn_module" data-h-template-name="footer" data-h-module-id="footer"></div>
+
+
+
+</textarea>
+
+
+<script>
+
+    moduleFunctions = {
+        js_on: function (opts) {
+            var that = this;
+
+                if(navJS.isMobile()){
+
+
+                    setTimeout(function(){
+                        $(".page_loading").animate({"opacity":"0.3"},function(){
+                            $(this).remove();
+                            $("body").css({"overflow":"hidden"})
+                        });
+                    },6000);
+                }
+
+                else{
+                    setTimeout(function(){
+                        $("html, body").animate({ scrollTop: $(document).height() }, 100);
+                    },300);
+
+                    setTimeout(function(){
+                        $(".page_loading").animate({"opacity":"0.3"},function(){
+                            $(this).remove();
+                        });
+                    },600);
+                }
+
+
+        }
+
+    };
+
+</script>
