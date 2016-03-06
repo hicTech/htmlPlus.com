@@ -1,0 +1,46 @@
+<style>
+
+    header{
+        height: 500px;
+    }
+    
+
+
+
+</style>
+
+
+
+
+<textarea data-role="template">
+    <header>
+
+
+    </header>
+</textarea>
+
+
+
+<script>
+
+
+
+
+    moduleFunctions = {
+        js_on:function(opts){
+            var that = this;
+            that.refreshSize();
+
+
+        },
+        refreshSize:function(opts){
+            var that = this;
+            var $that = that.$();
+            $that.find("header").css("height",window_height);
+            $that.find(".test").css("height",window_height/3);
+        }
+    };
+
+</script>
+
+

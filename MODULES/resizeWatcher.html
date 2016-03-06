@@ -1,0 +1,52 @@
+<style>
+
+</style>
+
+
+
+<div>
+
+</div>
+
+
+
+<script>
+
+    moduleFunctions = {
+        js_on:function(opts){
+
+            var that = this;
+
+
+            var $window = $(window);
+            window.window_width = $window.width();
+            window.window_height = $window.height();
+            window.document_height = $(document).height();
+            window.document_width = $(document).width();
+
+
+            setInterval(function () {
+
+                if ((window_width != $window.width()) || (window_height != $window.height())) {
+                    window_width = $window.width();
+                    window_height = $window.height();
+                    that.on_resize_functions();
+                }
+
+                if ((document_width != $(document).width()) || (document_height != $(document).height())) {
+                    document_width = $(document).width();
+                    document_height = $(document).height();
+                }
+
+
+            }, 300);
+        },
+
+        on_resize_functions:function(){
+            getModule("header","header").js_on();
+            getModule("footer","footer").refreshSize();
+        }
+
+    };
+
+</script>
