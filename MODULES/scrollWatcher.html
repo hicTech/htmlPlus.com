@@ -44,6 +44,8 @@
 
                 function inScroll(scroll, watchers, targets) {
 
+                    if(window.scrollAnimations == false)
+                        return false;
 
 
                     _.each(watchers, function (watcher, index) {

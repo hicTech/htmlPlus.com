@@ -261,9 +261,16 @@
                     setTimeout(function(){
                         $(".page_loading").animate({"opacity":"0.3"},function(){
                             $(this).remove();
-                            $("body").css({"overflow":"hidden"})
+
+
+
+                            $('[data-h-template-name="site"]').css({"height": window.window_width,"overflow":"hidden"});
+
+                            window.scrollAnimations = false;
+
+
                         });
-                    },6000);
+                    },1000);
                 }
 
                 else{
