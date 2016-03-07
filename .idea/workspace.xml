@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01a919a1-1f2d-4f9c-b780-adca3c2cc022" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vecchi grunt/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vecchi grunt/package.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MODULES/scrollWatcher.html" afterPath="$PROJECT_DIR$/MODULES/scrollWatcher.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MODULES/site.html" afterPath="$PROJECT_DIR$/MODULES/site.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MODULES/sky.html" afterPath="$PROJECT_DIR$/MODULES/sky.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="htmlPlus.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="site.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MODULES/site.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.875" vertical-offset="3555" max-vertical-offset="4485">
-              <caret line="234" column="52" selection-start-line="234" selection-start-column="52" selection-end-line="234" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.5645161" vertical-offset="3555" max-vertical-offset="4485">
+              <caret line="272" column="23" selection-start-line="272" selection-start-column="23" selection-end-line="272" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#textarea#0;n#!!top" expanded="true" />
               </folding>
@@ -72,10 +67,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scrollWatcher.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="scrollWatcher.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MODULES/scrollWatcher.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73170733" vertical-offset="0" max-vertical-offset="2715">
+            <state vertical-scroll-proportion="11.333333" vertical-offset="962" max-vertical-offset="2715">
               <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
               <folding />
             </state>
@@ -123,8 +118,8 @@
         <option value="$PROJECT_DIR$/MODULES/navJS.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/MODULES/sky.html" />
-        <option value="$PROJECT_DIR$/MODULES/site.html" />
         <option value="$PROJECT_DIR$/MODULES/scrollWatcher.html" />
+        <option value="$PROJECT_DIR$/MODULES/site.html" />
       </list>
     </option>
   </component>
@@ -413,29 +408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MODULES/sky.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.125" vertical-offset="3000" max-vertical-offset="9555">
-          <caret line="245" column="53" selection-start-line="245" selection-start-column="53" selection-end-line="245" selection-end-column="53" />
-          <folding>
-            <element signature="e#2151#29916#2" expanded="true" />
-            <element signature="e#30273#35174#2" expanded="true" />
-            <element signature="e#35563#46768#2" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#textarea#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MODULES/site.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.875" vertical-offset="3555" max-vertical-offset="4485">
-          <caret line="234" column="52" selection-start-line="234" selection-start-column="52" selection-end-line="234" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#textarea#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.541666" vertical-offset="377" max-vertical-offset="1320">
@@ -452,11 +424,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MODULES/sky.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.125" vertical-offset="3000" max-vertical-offset="9555">
+          <caret line="245" column="53" selection-start-line="245" selection-start-column="53" selection-end-line="245" selection-end-column="53" />
+          <folding>
+            <element signature="e#2151#29916#2" expanded="true" />
+            <element signature="e#30273#35174#2" expanded="true" />
+            <element signature="e#35563#46768#2" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#textarea#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MODULES/scrollWatcher.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73170733" vertical-offset="0" max-vertical-offset="2715">
+        <state vertical-scroll-proportion="11.333333" vertical-offset="962" max-vertical-offset="2715">
           <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MODULES/site.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5645161" vertical-offset="3555" max-vertical-offset="4485">
+          <caret line="272" column="23" selection-start-line="272" selection-start-column="23" selection-end-line="272" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#textarea#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
